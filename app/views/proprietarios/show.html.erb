@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cpf ou cnpj:</strong>
+  <%= @proprietario.cpf_cnpj %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @proprietario.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @proprietario.endereco %>
+</p>
+
+<%= link_to 'Editar', edit_proprietario_path(@proprietario) %> |
+<%= link_to 'Voltar', proprietarios_path %>

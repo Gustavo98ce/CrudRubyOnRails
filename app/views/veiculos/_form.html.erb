@@ -1,0 +1,34 @@
+<%= form_with(model: veiculo, local: true) do |form| %>
+  <% if veiculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(veiculo.errors.count, "error") %> prohibited this veiculo from being saved:</h2>
+
+      <ul>
+        <% veiculo.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <div class="field">
+    <%= form.label :placa %>
+    <%= form.text_field :placa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :renavam %>
+    <%= form.text_field :renavam %>
+  </div>
+
+    <div class="field">
+      <%= form.label :proprietario %>
+      <%= collection_select(:veiculo, :proprietario_id, Proprietario.all , :id, :nome) %>
+    </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

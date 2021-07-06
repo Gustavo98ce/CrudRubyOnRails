@@ -1,7 +1,7 @@
 <%= form_with(model: veiculo, local: true) do |form| %>
   <% if veiculo.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(veiculo.errors.count, "error") %> prohibited this veiculo from being saved:</h2>
+      <h2><%= pluralize(veiculo.errors.count, "error") %> seu veiculo não pode ser salvo pois:</h2>
 
       <ul>
         <% veiculo.errors.full_messages.each do |message| %>
@@ -15,12 +15,12 @@
 
   <div class="field">
     <%= form.label :placa %>
-    <%= form.text_field :placa %>
+    <%= form.text_field :placa,maxlength:7 %>
   </div>
 
   <div class="field">
     <%= form.label :renavam %>
-    <%= form.text_field :renavam %>
+    <%= form.text_field :renavam, maxlength: 11 %>
   </div>
 
     <div class="field">

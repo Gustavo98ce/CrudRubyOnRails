@@ -4,8 +4,8 @@ body {
   margin: 33px; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: Noto Sans, sans-serif;
+  font-size: 15px;
   line-height: 18px; }
 
 pre {
@@ -24,10 +24,14 @@ a:hover {
   background-color: #000; }
 
 th {
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  align-self: center;}
+
 
 td {
-  padding: 0 5px 7px; }
+  padding: 0 5px 7px;
+align-items: center;
+  background-color: #FFFF00;}
 
 div.field,
 div.actions {

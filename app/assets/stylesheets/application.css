@@ -14,3 +14,8 @@
  *= require_self
  */
 @import 'materialize';
+
+footer { margin-top: 300px; }
+table, td, th { vertical-align: bottom; border:double; }
+th { border-bottom: 3px solid #DDD; }
+body { margin: 0; }

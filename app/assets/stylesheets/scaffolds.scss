@@ -1,12 +1,14 @@
 body {
-  background-color: #fff;
+  background-color: #fff8dc;
   color: #333;
   margin: 33px; }
 
 body, p, ol, ul, td {
   font-family: Noto Sans, sans-serif;
   font-size: 15px;
-  line-height: 18px; }
+  line-height: 18px;
+
+}
 
 pre {
   background-color: #eee;
@@ -14,7 +16,7 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000; }
+  color: #1a1aff; }
 
 a:visited {
   color: #666; }
@@ -25,17 +27,19 @@ a:hover {
 
 th {
   padding-bottom: 5px;
-  align-self: center;}
+  align-self: center;
+  background-color: #ffe066}
 
 
 td {
   padding: 0 5px 7px;
 align-items: center;
-  background-color: #FFFF00;}
+  background-color:#ffff80 ;}
 
 div.field,
 div.actions {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #1a1aff; }
 
 #notice {
   color: green; }

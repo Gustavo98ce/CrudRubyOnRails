@@ -24,7 +24,7 @@
   </div>
 
     <div class="field">
-      <%= form.label :proprietario %>
+      <%= form.label :proprietario,"Proprietario:" %>
       <%= collection_select(:veiculo, :proprietario_id, Proprietario.all , :id, :nome) %>
     </div>
 

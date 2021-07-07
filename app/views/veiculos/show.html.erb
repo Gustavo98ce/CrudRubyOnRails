@@ -10,5 +10,10 @@
   <%= @veiculo.renavam %>
 </p>
 
+<p>
+  <strong>Proprietario:</strong>
+  <%= @veiculo.proprietario.nome %>
+</p>
+
 <%= link_to 'Editar', edit_veiculo_path(@veiculo) %> |
 <%= link_to 'Voltar', veiculos_path %>

@@ -15,7 +15,14 @@
  */
 @import 'materialize';
 
-footer { margin-top: 300px; }
-table, td, th { vertical-align: bottom; border:double; }
+footer { margin-top: auto; background-color: #ebebeb;    padding: 10px 0;}
+table, td, th { align-items: center; justify-content: center; border:double; }
 th { border-bottom: 3px solid #DDD; }
-body { margin: 0; }
+body {display: flex;
+    flex-direction: column;
+    min-height: 100%; }
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
